@@ -6,7 +6,7 @@ function App() {
   const [doctors, setdoctors] = useState([]);
   async function listdoctors (){
     // console.log('button is working fine');
-     const result =await axios.get('http://localhost:8080/dummydata');
+     const result =await axios.get('https://doctors-appointment-api-server.onrender.com/dummydata');
      setdoctors(result.data);
      
     //  console.log(resultdata);
